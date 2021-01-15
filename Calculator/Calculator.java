@@ -1,14 +1,15 @@
+package Calculator;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 import java.util.Scanner;
 
-
 public class Calculator {
 
 	public static void main(String[] args) {
-	    Scanner in = new Scanner(System.in);
-	    String process = in.nextLine();
+		Scanner in = new Scanner(System.in);
+		String process = in.nextLine();
 		System.out.println(exec(process));
 
 	}
@@ -23,8 +24,7 @@ public class Calculator {
 
 			double res = calc(exp.substring(leftIndex + 1, rightIndex));
 
-			exp = exp.substring(0, leftIndex) + res
-					+ exp.substring(rightIndex + 1);
+			exp = exp.substring(0, leftIndex) + res + exp.substring(rightIndex + 1);
 
 			return exec(exp);
 		}
@@ -100,10 +100,8 @@ public class Calculator {
 				if (index == 0) {
 					exp = "@" + exp.substring(1);
 				} else {
-					if (exp.charAt(index - 1) == '*'
-							|| exp.charAt(index - 1) == '/') {
-						exp = exp.substring(0, index) + "@"
-								+ exp.substring(index + 1);
+					if (exp.charAt(index - 1) == '*' || exp.charAt(index - 1) == '/') {
+						exp = exp.substring(0, index) + "@" + exp.substring(index + 1);
 					}
 				}
 			}

@@ -1,3 +1,5 @@
+package Balance;
+
 import java.util.Stack;
 import java.io.*;
 import java.nio.charset.*;
@@ -40,7 +42,7 @@ public class Balance {
         return stack.isEmpty();
     }
 
-    public String convertFileToString() throws IOException {
+    public static String convertFileToString() throws IOException {
         File file = new File("data.txt");
         return FileUtils.readFileToString(file, StandardCharsets.UTF_8);
     }
