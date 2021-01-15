@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch InsertionSort",
+            "request": "launch",
+            "mainClass": "sortAlgorithms.InsertionSort",
+            "projectName": "Algorithms_13789907"
+        },
+        {
+            "type": "java",
             "name": "Launch BubbleSort",
             "request": "launch",
             "mainClass": "sortAlgorithms.BubbleSort",
